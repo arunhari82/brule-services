@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="modelid1" name="model1" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/">
+  <dmn:description>ModelDescription</dmn:description>
+  <dmn:itemDefinition id="82d3749b-2859-4a63-8c54-9a60f0c81db4" name="tBookSubType" isCollection="false">
+    <dmn:itemComponent id="7b3cfc6f-8dce-4980-bfe6-43f6d0b3f900" name="id" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="f03bf6a0-9648-4610-a058-d4a1e43e10ac" name="language" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="d0d93214-7392-4193-a801-bdfb386cc474" name="edition" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="303c617d-a7ab-48e4-a129-ec5d27cf6f8c" name="author" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="a96f4e8c-ffaa-4435-9ce7-15965d13360f" name="tBookRequest" isCollection="false">
+    <dmn:itemComponent id="6ead7655-2977-4ff3-bede-961b6a4352f0" name="book" isCollection="true">
+      <dmn:typeRef>tBookSubType</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="c73eaae4-1489-4f6d-9cdb-76d2b595dcc6" name="tActorsSubType" isCollection="false">
+    <dmn:itemComponent id="f83c7a2c-0eeb-47e9-a73f-2abc26feb746" name="name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="d9681e57-89e8-4afb-963c-fd3ac4882d3c" name="age" isCollection="false">
+      <dmn:typeRef>integer</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="5c6221f5-92ea-45ae-9827-b61370bbf971" name="BornAt" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="591bd644-9a4c-48a7-96c8-fc6a0f820129" name="Birthdate" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="6df115a8-ba54-41b6-bdb3-97e8cd50ce1f" name="photo" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="5940da0c-ce08-4203-8e35-11ee5690300b" name="wife" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="61aa47a2-824e-46c6-9e0f-8cb6779de9c5" name="weight" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="95b26718-e654-4334-83d6-39617d2d389b" name="hasChildren" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="801d88bf-f5d7-4c1d-923d-c685c10b0aad" name="hasGreyHair" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="3ff35f02-647a-4dd5-8dd3-cd8273662a91" name="children" isCollection="true">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="2d1be7f8-2753-44aa-8d0d-012066655282" name="tActorRequest" isCollection="false">
+    <dmn:itemComponent id="dec1acef-0d12-480d-b249-41132eb46aa6" name="Actors" isCollection="true">
+      <dmn:typeRef>tActorsSubType</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="c666f1c6-712f-4d41-9845-75f3a5b6c838" name="tActorsSubType" isCollection="false">
+    <dmn:itemComponent id="28472e50-69e4-48fe-b946-7c8ab8f36080" name="name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="b62bb72c-cecd-4abf-b4d2-c360e7bf5a5e" name="age" isCollection="false">
+      <dmn:typeRef>integer</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="89b70d3f-cbea-46a4-b525-928eea5a4d21" name="BornAt" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="e58b0e28-deef-405a-955a-4a846dc97364" name="Birthdate" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="a4825e6d-8bb8-42f9-a1bc-cac77c83b071" name="photo" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="34042de2-178b-4227-9733-03ed294423c6" name="wife" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="a6ff677b-3ded-49c6-9a42-a2b5e10787ca" name="weight" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="96c5c45f-cc37-4139-ba28-0e6d2125e8cb" name="hasChildren" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="44b242d9-b402-42e0-9b0c-b2ac9a79d11f" name="hasGreyHair" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="b3d5d665-5faa-4211-9c23-bee8bcc951ea" name="children" isCollection="true">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="e2940592-1156-44ff-8f37-d381d92610ec" name="tActorRequest" isCollection="false">
+    <dmn:itemComponent id="b5d9a927-f15d-4efa-b170-790cbc682188" name="Actors" isCollection="true">
+      <dmn:typeRef>tActorsSubType</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+</dmn:definitions>
